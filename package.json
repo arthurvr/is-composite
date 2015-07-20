@@ -1,0 +1,42 @@
+{
+  "name": "is-composite",
+  "version": "0.0.0",
+  "description": "Check if a number is composite",
+  "license": "MIT",
+  "repository": "arthurvr/is-composite",
+  "author": {
+    "name": "Arthur Verschaeve",
+    "email": "contact@arthurverschaeve.be",
+    "url": "arthurverschaeve.be"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "composite",
+    "prime",
+    "math",
+    "number",
+    "mathematics",
+    "integer",
+    "check",
+    "detect",
+    "is",
+    "positive",
+    "devisor",
+    "factor"
+  ],
+  "dependencies": {
+    "is-prime": "^1.0.1",
+    "number-is-integer": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
