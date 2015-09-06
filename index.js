@@ -4,7 +4,7 @@ var numberIsInteger = require('number-is-integer');
 
 module.exports = function (number) {
 	if (typeof number !== 'number') {
-		throw new Error('Expected a number');
+		throw new TypeError('Expected a number');
 	}
 
 	if (!numberIsInteger(number) || number <= 1) {

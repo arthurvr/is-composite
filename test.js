@@ -17,7 +17,7 @@ test('should check if a number is composite', function (t) {
 test('should throw when not passing a number', function (t) {
 	t.throws(function () {
 		isComposite({});
-	});
+	}, TypeError);
 
 	t.end();
 });
