@@ -1,23 +1,23 @@
 'use strict';
-var assert = require('assert');
+var test = require('ava');
 var isComposite = require('./');
 
-it('should check if a number is composite', function () {
+test('should check if a number is composite', function (t) {
 	[1, -1, 0, 2, 3, 997, 7919, 999983, 4.1, 122.001].forEach(function (number) {
-		assert(!isComposite(number));
+		t.false(isComposite(number));
 	});
 
 	[4, 77, 122, 999999].forEach(function (number) {
-		assert(isComposite(number));
+		t.true(isComposite(number));
 	});
+
+	t.end();
 });
 
-it('should throw when not passing a number', function () {
-	assert.throws(function () {
+test('should throw when not passing a number', function (t) {
+	t.throws(function () {
 		isComposite({});
 	});
 
-	assert.throws(function () {
-		isComposite({});
-	});
+	t.end();
 });
