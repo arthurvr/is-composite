@@ -39,10 +39,5 @@
   "devDependencies": {
     "ava": "*",
     "xo": "*"
-  },
-  "xo": {
-    "envs": [
-      "node"
-    ]
   }
 }
