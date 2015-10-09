@@ -13,7 +13,7 @@ $ npm install --save is-composite
 ## Usage
 
 ```js
-var isComposite = require('is-composite');
+const isComposite = require('is-composite');
 
 isComposite(3);
 //=> false
